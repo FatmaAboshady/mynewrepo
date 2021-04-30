@@ -1,0 +1,277 @@
+
+
+.font-size-lg{
+    font-size: 2rem;
+}
+.font-size-xl{
+    font-size: 3rem;
+
+}
+
+nav{
+     background-color: transparent !important;
+
+
+}
+.main-color{
+    color: #0078ff;
+}
+.bg-main{
+    background-color: #0078ff;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 20px;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.nav-item:hover::after {
+    width: 47%;
+    opacity: 1;
+}
+
+header{
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position:center center ;
+
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.bg-black-gradient{
+    background-color: rgba(0, 0, 0, .5) ;
+    
+}
+header h1{
+    font-size: 4.5rem;
+
+
+}
+header p{
+    font-size: 2.5rem;
+
+}
+.animation p{
+    position: absolute;
+    top: 20px;
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.animation .dash{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    animation-name: animate-to-right;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+
+}
+@keyframes animate-to-right{
+    0%{
+        right: 50px;
+    }
+    100%{
+        right:0;
+    }
+}
+@keyframes animate-to-left{
+    0%{
+        left: 50px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    51%{
+        opacity: 100%;
+    }
+    100%{
+        left:0;
+        opacity: 100%;
+    }
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 50%;
+    }
+  }
+
+
+  /* about */
+  .after-about::after{
+      content: '';
+      width: 25%;
+      height: 3px;
+      position: absolute;
+      top :45px;
+      left: 15px; 
+      color: tomato;
+      background-color:  #0078ff;
+    }
+
+
+  .info p{
+      font-size: 1.2rem;
+
+  }
+  .box-shadow{
+    box-shadow: 1px 1px 4px #c5c4c4;
+
+  }
+
+
+  /**/
+  .border-card{
+      border-radius: 20px;
+      border-bottom: 10px  40px red;
+  }
+  .icons-format{
+     
+      border: 10px solid #0078ff ;
+      transition: all .5s;
+      width: 120px;
+      height: 120px;
+  }
+  .icons-format i{
+      font-size: 40px;
+      }
+
+ .border-card:hover .icons-format{
+     background-color:#0078ff ;
+     border-color: #cde1f8;
+ }
+ .border-card:hover i{
+     color: white;
+ }
+ .info-items p::after{
+        content: '';
+        width: 40px;
+        height: 3px;
+        position: absolute;
+        top :150px;
+        left: 47%; 
+        color: tomato;
+        background-color:  #0078ff;
+      }
+
+
+
+
+ /* below services*/
+
+ .below-services{
+
+
+background-image: url(../images/counters-bg.jpg);
+background-position: center center;
+ background-size: cover;
+
+
+ }
+ .overlay-blue
+{
+ background-color: rgba(6, 26, 252, 0.5);
+ 
+
+}
+.icons-format-sm{
+     
+    border: 10px solid #cde1f8 ;
+    transition: all .5s;
+    width: 80px;
+    height: 80px;
+}
+.icons-format i{
+    font-size: 20px;
+    }
+
+
+
+
+    /* portofolio*/
+
+    .icons-format-xs{
+     
+        border: 3px solid #0078ff ;
+        transition: all .5s;
+        width: 40px;
+        height: 40px;
+    }
+    .icons-format i{
+        font-size: 20px;
+        }
+        
+       
+        .portofolio-scales  img{
+            transition: all 1s;
+
+
+        }
+        
+    .portofolio-scales:hover  img{
+
+        transform: scale(1.2);
+      
+
+        }
+        .portofolio-scale:hover .portofolio-scale h5{
+            background-color: sandybrown;
+        }
+
+
+
+
+        /* testemonial*/
+
+        .testemonial{
+            background-image: url(../images/overlay-bg.jpg);
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .dots {
+            width: 10px  !important;
+            height: 10px !important;
+
+        }
+
+        /* blog*/
+
+        .border-blog{
+            border: 1px solid rgb(197, 196, 196);
+        }
+        .blog-bord{
+            border-top: 1px solid rgb(197, 196, 196);
+        }
+        .shadow{
+
+        box-shadow:1px 0 10px rgb(197, 196, 196)
+        }
+
+        .blog-button{
+            position: absolute;
+            text-align: center;
+            top: -16px;
+            left: 40% 
+ 
+        }
